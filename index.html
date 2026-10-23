@@ -1,0 +1,441 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta property="og:title" content="CITY CAFE 靜岡濃抹茶拿鐵｜新品嚐鮮優惠">
+<meta property="og:description" content="10/23–10/25，靜岡濃抹茶拿鐵2送2、2杯只要38元，每日限量。">
+<meta property="og:image" content="{{ site.github.url }}/valorant-event.png">
+<meta property="og:url" content="{{ site.github.url }}/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ site.github.url }}/valorant-event.png">
+
+<script>
+/* =========================================================
+   ★★★★★ 所有要修改的內容都在這裡 ★★★★★
+   之後你只需要改這一區，不用動下面的程式。
+   ========================================================= */
+
+const CONFIG = {
+  /* 頁籤標題 */
+  pageTitle: "CITY CAFE 靜岡濃抹茶拿鐵｜新品嚐鮮",
+
+  /* 主圖：圖片和 html 放同一個資料夾 */
+  heroImage: "valorant-event.png",
+  heroAlt: "CITY CAFE 靜岡濃抹茶拿鐵，2送2、2杯只要38元",
+
+  /* 上方文字 */
+  eyebrow: "7-ELEVEN CITY CAFE・新品嚐鮮",
+  title: "靜岡濃抹茶拿鐵",
+  subtitle: "濃郁茶香，每一口都好享受。靜岡濃抹茶拿鐵新品嚐鮮，活動期間每日限量。",
+  /* 資訊卡 */
+  rewardLabel: "活動內容",
+  rewardText: "2送2・2杯只要38元",
+
+  timeLabel: "活動期間",
+  timeText: "2026/10/23 ～ 2026/10/25",
+
+  /* 領取區塊（依照你提供的範例風格） */
+  claimTag: "CITY CAFE 抹茶新品嚐鮮",
+  claimTitleLine1: "一鍵領取",
+  claimTitleLine2: "靜岡濃抹茶拿鐵優惠",
+  claimDesc: "活動期間每日限量。OPEN錢包、icash Pay、到店支付可共享。點擊下方按鈕聯絡活動人員，了解領取方式。",
+  claimButtonText: "前往立即領取",
+  claimSafeText: "濃郁茶香・每日限量",
+
+  /* ★ 改成你的 LINE 連結即可 */
+  lineLink: "https://lin.ee/wvf76w0",
+
+  /* 底部小字 */
+  footerText: "※ 活動期間：10/23～10/25。優惠內容：2送2、2杯只要38元，每日限量。"
+};
+</script>
+
+<title></title>
+
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+
+body{
+  margin:0;
+  min-height:100vh;
+  color:#fff;
+  font-family:
+    "Noto Sans TC",
+    "Microsoft JhengHei",
+    "PingFang TC",
+    Arial,
+    sans-serif;
+  background:#06080b;
+  overflow-x:hidden;
+}
+
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:0;
+  pointer-events:none;
+  background:
+    radial-gradient(circle at 18% 2%, rgba(255,49,73,.16), transparent 24%),
+    radial-gradient(circle at 92% 24%, rgba(255,49,73,.10), transparent 28%),
+    radial-gradient(circle at 10% 88%, rgba(255,49,73,.07), transparent 24%),
+    linear-gradient(145deg,#06080b 0%, #0a0e13 55%, #10070c 100%);
+}
+
+.bg-grid{
+  position:fixed;
+  inset:0;
+  z-index:0;
+  pointer-events:none;
+  opacity:.10;
+  background-image:
+    linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+  background-size:40px 40px;
+  mask-image:linear-gradient(to bottom, black, rgba(0,0,0,.15));
+}
+
+.glow{
+  position:fixed;
+  border-radius:50%;
+  filter:blur(88px);
+  pointer-events:none;
+  z-index:0;
+}
+.glow.one{
+  width:260px;height:260px;top:-110px;right:-70px;
+  background:rgba(255,44,66,.20);
+}
+.glow.two{
+  width:230px;height:230px;bottom:90px;left:-90px;
+  background:rgba(255,30,52,.14);
+}
+
+.page{
+  width:min(100%, 760px);
+  margin:0 auto;
+  padding:18px 16px 40px;
+  position:relative;
+  z-index:1;
+}
+
+.hero{
+  overflow:hidden;
+  border-radius:22px;
+  border:1px solid rgba(255,86,102,.28);
+  background:#0a0d12;
+  box-shadow:
+    0 18px 48px rgba(0,0,0,.50),
+    0 0 28px rgba(255,38,56,.10);
+}
+.hero img{
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:16/9;
+  object-fit:cover;
+}
+
+.intro{
+  margin-top:22px;
+  text-align:center;
+  padding:0 8px;
+}
+.eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 14px;
+  border-radius:999px;
+  background:rgba(255,50,73,.08);
+  border:1px solid rgba(255,73,94,.34);
+  color:#ff6a7c;
+  font-size:11px;
+  font-weight:1000;
+  letter-spacing:.16em;
+}
+.eyebrow::before{
+  content:"";
+  width:7px;height:7px;border-radius:50%;
+  background:#ff334b;
+  box-shadow:0 0 10px #ff334b;
+}
+
+h1{
+  margin:14px 0 8px;
+  font-size:36px;
+  line-height:1.12;
+  font-weight:1000;
+  letter-spacing:-.03em;
+  text-shadow:0 0 18px rgba(255,45,68,.16);
+}
+.subtitle{
+  width:min(100%, 600px);
+  margin:0 auto;
+  color:#b9c0ca;
+  font-size:14px;
+  line-height:1.8;
+}
+
+.info{
+  margin-top:24px;
+  padding:18px;
+  border-radius:20px;
+  background:linear-gradient(145deg, rgba(48,78,29,.96), rgba(27,51,21,.96));
+  border:1px solid rgba(255,255,255,.07);
+  box-shadow:0 15px 38px rgba(0,0,0,.32);
+}
+.row{
+  display:flex;
+  align-items:flex-start;
+  gap:14px;
+  padding:13px 14px;
+  border-radius:14px;
+  background:rgba(255,255,255,.035);
+}
+.row + .row{margin-top:10px}
+.label{
+  flex:0 0 84px;
+  color:#ff6d7d;
+  font-size:13px;
+  font-weight:900;
+}
+.value{
+  flex:1;
+  color:#f5f7fa;
+  font-size:14px;
+  line-height:1.56;
+  word-break:break-word;
+}
+
+/* ===== 領取區塊：改成參考圖那種字體視覺 ===== */
+.claim-panel{
+  margin-top:22px;
+  padding:22px;
+  border-radius:26px;
+  background:linear-gradient(145deg, #345322, #1c351a);
+  border:1px solid rgba(255,255,255,.08);
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,.02) inset,
+    0 20px 46px rgba(0,0,0,.42);
+}
+.claim-tag{
+  color:#fff09a;
+  font-size:13px;
+  font-weight:1000;
+  letter-spacing:.10em;
+  text-transform:uppercase;
+}
+.claim-title{
+  margin-top:12px;
+  font-weight:1000;
+  line-height:1.10;
+  letter-spacing:-.03em;
+  color:#fff;
+}
+.claim-title .line1{
+  display:block;
+  font-size:40px;
+}
+.claim-title .line2{
+  display:block;
+  margin-top:4px;
+  font-size:40px;
+}
+.claim-desc{
+  margin-top:14px;
+  color:#dce5ca;
+  font-size:14px;
+  line-height:1.75;
+  max-width:560px;
+}
+.claim-button-wrap{
+  margin-top:22px;
+}
+.claim-button{
+  width:100%;
+  min-height:56px;
+  border:0;
+  border-radius:16px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  background:#ffeb8c;
+  color:#4d230f;
+  font-size:20px;
+  font-weight:1000;
+  letter-spacing:.02em;
+  box-shadow:
+    0 8px 22px rgba(0,0,0,.20),
+    0 0 0 1px rgba(255,255,255,.10) inset;
+  transition:transform .16s ease, filter .16s ease;
+}
+.claim-button::after{
+  content:"→";
+  margin-left:10px;
+  font-size:22px;
+}
+.claim-button:hover{filter:brightness(1.03)}
+.claim-button:active{transform:scale(.988)}
+
+.claim-safe{
+  margin-top:12px;
+  text-align:center;
+  color:#c7d6b1;
+  font-size:12px;
+  font-weight:800;
+}
+.claim-safe::before{
+  content:"";
+  display:inline-block;
+  width:8px;
+  height:8px;
+  margin-right:7px;
+  border-radius:50%;
+  background:#bfda70;
+  box-shadow:0 0 8px #bfda70;
+  vertical-align:middle;
+}
+
+.footer{
+  margin-top:14px;
+  text-align:center;
+  color:#767e8a;
+  font-size:11px;
+  line-height:1.6;
+}
+
+@media(max-width:560px){
+  .page{padding:12px 10px 32px}
+  .hero{border-radius:16px}
+  h1{font-size:31px}
+  .info{padding:13px}
+  .row{gap:10px;padding:12px}
+  .label{flex-basis:72px;font-size:12px}
+  .value{font-size:13px}
+  .claim-panel{padding:18px;border-radius:20px}
+  .claim-title .line1,
+  .claim-title .line2{font-size:32px}
+  .claim-button{font-size:18px;min-height:54px}
+}
+
+/* CITY CAFE 抹茶風格背景：奶油白、抹茶綠、暖木色光影；原有版面保持不變 */
+body { background:#f7f4df; }
+body::before {
+  background:
+    radial-gradient(ellipse at 12% 8%, rgba(153,185,56,.28), transparent 35%),
+    radial-gradient(ellipse at 88% 25%, rgba(233,201,133,.28), transparent 34%),
+    radial-gradient(ellipse at 22% 92%, rgba(87,138,44,.20), transparent 38%),
+    linear-gradient(155deg,#fffced 0%,#eaf0ce 55%,#f2e2c4 100%);
+}
+.bg-grid { opacity:.14; background-image:repeating-linear-gradient(35deg,rgba(81,118,35,.10) 0 1px,transparent 1px 44px); mask-image:none; }
+.glow.one { background:rgba(156,188,61,.28); }
+.glow.two { background:rgba(210,170,99,.25); }
+/* 讓深色內容卡片與原本白色字體維持可讀性，只調整外圍裝飾色 */
+.hero { border-color:rgba(82,124,40,.42); box-shadow:0 18px 48px rgba(63,83,29,.18),0 0 28px rgba(138,171,57,.16); }
+.eyebrow { background:rgba(81,122,36,.12);border-color:rgba(81,122,36,.35);color:#3d641d; }
+.eyebrow::before { background:#76982f;box-shadow:0 0 10px rgba(118,152,47,.45); }
+h1 { color:#214b18;text-shadow:none; }
+.subtitle { color:#53613b; }
+.info { border-color:rgba(155,180,76,.42); }
+.label { color:#d5e99a; }
+.footer { color:#616d48; }
+
+</style>
+</head>
+
+<body>
+
+<div class="bg-grid"></div>
+<div class="glow one"></div>
+<div class="glow two"></div>
+
+<main class="page">
+
+  <section class="hero">
+    <img id="hero-image" alt="">
+  </section>
+
+  <section class="intro">
+    <div class="eyebrow" id="eyebrow"></div>
+    <h1 id="title"></h1>
+    <p class="subtitle" id="subtitle"></p>
+  </section>
+
+  <section class="info">
+    <div class="row">
+      <div class="label" id="reward-label"></div>
+      <div class="value" id="reward-text"></div>
+    </div>
+    <div class="row">
+      <div class="label" id="time-label"></div>
+      <div class="value" id="time-text"></div>
+    </div>
+  </section>
+
+  <section class="claim-panel">
+    <div class="claim-tag" id="claim-tag"></div>
+
+    <div class="claim-title">
+      <span class="line1" id="claim-line1"></span>
+      <span class="line2" id="claim-line2"></span>
+    </div>
+
+    <div class="claim-desc" id="claim-desc"></div>
+
+    <div class="claim-button-wrap">
+      <a
+        id="claim-button"
+        class="claim-button"
+        href="#"
+        rel="noopener noreferrer">
+      </a>
+    </div>
+
+    <div class="claim-safe" id="claim-safe"></div>
+  </section>
+
+  <div class="footer" id="footer"></div>
+
+</main>
+
+<script>
+const $ = (id) => document.getElementById(id);
+
+document.title = CONFIG.pageTitle;
+
+$("hero-image").src = CONFIG.heroImage;
+$("hero-image").alt = CONFIG.heroAlt;
+
+$("eyebrow").textContent = CONFIG.eyebrow;
+$("title").textContent = CONFIG.title;
+$("subtitle").textContent = CONFIG.subtitle;
+
+$("reward-label").textContent = CONFIG.rewardLabel;
+$("reward-text").textContent = CONFIG.rewardText;
+
+$("time-label").textContent = CONFIG.timeLabel;
+$("time-text").textContent = CONFIG.timeText;
+
+
+$("claim-tag").textContent = CONFIG.claimTag;
+$("claim-line1").textContent = CONFIG.claimTitleLine1;
+$("claim-line2").textContent = CONFIG.claimTitleLine2;
+$("claim-desc").textContent = CONFIG.claimDesc;
+$("claim-button").textContent = CONFIG.claimButtonText;
+$("claim-button").href = CONFIG.lineLink;
+$("claim-safe").textContent = CONFIG.claimSafeText;
+
+$("footer").textContent = CONFIG.footerText;
+</script>
+
+</body>
+</html>
